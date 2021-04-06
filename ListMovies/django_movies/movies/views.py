@@ -9,14 +9,14 @@ class MoviesView(ListView):
     """Список фильмов"""
     model = Movie
     queryset = Movie.objects.filter(draft=False)
-    template_name = 'movie_list.html'
+    template_name = 'movies/movie_list.html'
 
 
 class MovieDetailView(DetailView):
     """Полное описание фильма"""
     model = Movie
     slug_field = "url"
-    template_name = 'movie_detail.html'
+    template_name = 'movies/movie_detail.html'
 
 
 
