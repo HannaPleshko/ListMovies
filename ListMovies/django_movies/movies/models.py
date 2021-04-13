@@ -67,7 +67,7 @@ class Movie(models.Model):
     fees_in_usa = models.PositiveIntegerField(
         "Сборы в США", default=0, help_text="указывать сумму в долларах"
     )
-    fees_in_world = models.PositiveIntegerField(
+    fess_in_world = models.PositiveIntegerField(
         "Сборы в мире", default=0, help_text="указывать сумму в долларах"
     )
     category = models.ForeignKey(
